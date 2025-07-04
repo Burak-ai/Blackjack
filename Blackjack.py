@@ -9,7 +9,7 @@ def card_value(card):
         try:
             return int(card)
         except ValueError:
-            print("Invalid card entered. Use numbers or J, Q, K, A.")
+            print("Invalid card entered. Use numbers or J, Q, K, A. ")
             return 0
 
 def best_ace_value(total_so_far, ace_count):
@@ -46,7 +46,6 @@ def get_player_hand():
     return cards
 
 def calculate_hand_total(cards):
-    """Calculate hand total with smart ace evaluation"""
     total = 0
     ace_count = 0
     for card in cards:
