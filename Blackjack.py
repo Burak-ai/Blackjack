@@ -22,7 +22,6 @@ def best_ace_value(total_so_far, ace_count):
     return total
 
 def draw_card():
-    """Randomly draw a card from deck"""
     cards = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
     return random.choice(cards)
 
