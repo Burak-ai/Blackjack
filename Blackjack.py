@@ -87,7 +87,7 @@ def play_blackjack():
     print(f"\nYour final hand: {player_cards} → Total: {player_total}")
 
     if player_total > 21:
-        print("You busted! Dealer wins.")
+        print("You busted! Dealer wins. ")
         return
 
     print("\nDealer's turn...")
@@ -102,7 +102,7 @@ def main():
         play_blackjack()
         again = input("\nPlay again? (y/n): ").lower()
         if again != 'y':
-            print("Thanks for playing!")
+            print("Thanks for playing! ")
             break
 
 # Start the game
