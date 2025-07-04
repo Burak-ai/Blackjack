@@ -1,7 +1,6 @@
 import random
 
 def card_value(card):
-    """Convert card label to numeric value or special tag for Ace."""
     if card.upper() in ['J', 'Q', 'K']:
         return 10
     elif card.upper() == 'A':
@@ -14,7 +13,6 @@ def card_value(card):
             return 0
 
 def best_ace_value(total_so_far, ace_count):
-    """Smart ace logic: count as 11 if it doesn't bust, else count as 1"""
     total = total_so_far
     for _ in range(ace_count):
         if total + 11 <= 21:
